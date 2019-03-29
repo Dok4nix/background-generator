@@ -1,0 +1,140 @@
+:root {
+  --myPink: #ff7990;
+  --myRed: #f73232;
+}
+
+body {
+  background: var(--myPink);
+  padding-top: 10vh;
+  margin: 0;
+}
+
+/* Text */
+body,
+input,
+button,
+h2 {
+  color: var(--myPink);
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+label,
+p,
+h2 {
+  color: white;
+}
+
+.container {
+  max-width: 440px;
+  margin: 0 auto 200px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+label {
+  display: block;
+  text-align: right;
+  margin: 2rem 0;
+}
+
+input,
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input {
+  height: 2rem;
+  width: 12rem;
+}
+
+button {
+  background: white;
+  height: 4rem;
+  width: 100%;
+}
+
+button:hover {
+  background: lightgray;
+  cursor: pointer;
+}
+
+#love-display {
+  display: none;
+}
+
+.heart,
+.heart:before,
+.heart:after {
+  background-color: white;
+  height: 10rem;
+  width: 10rem;
+}
+
+.heart {
+  position: relative;
+  bottom: 160px;
+  transform: rotate(-45deg);
+  margin: 0 auto;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart:before {
+  top: -5rem;
+  left: 0;
+}
+
+#love-percent {
+  font-size: 5rem;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  bottom: 75px;
+  color: var(--myPink);
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    padding-top: 0;
+    overflow-x: hidden;
+  }
+
+  h2 {
+    font-size: 2rem;
+    border-bottom: 4px solid white;
+    width: 83%;
+    margin: 30px auto;
+    padding-bottom: 5px;
+  }
+
+  input {
+    width: 70%;
+    margin: 2px;
+    height: 2rem;
+  }
+
+  button {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  label {
+    text-align: center;
+  }
+}
